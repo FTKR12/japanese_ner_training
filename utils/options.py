@@ -13,12 +13,11 @@ def get_args():
     parser.add_argument('--val_split', default=0.15, type=float)
     parser.add_argument('--test_split', default=0.10, type=float)
 
-
-
+    # model params
     parser.add_argument('--model_name', default='cl-tohoku/bert-base-japanese-whole-word-masking')
     parser.add_argument('--max_length', default=128, type=int)
     
-    
+    # experimental params
     parser.add_argument('--epochs', default=5, type=int)
     parser.add_argument('--batch_size', default=16, type=int)
     parser.add_argument('--lr', default=2e-5, type=float)

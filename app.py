@@ -34,7 +34,6 @@ class TextRequest(BaseModel):
 async def root():
     return {"message": "now on running"}
 
-# エンドポイントの定義
 @app.post("/predict")
 async def predict(request: TextRequest):
     result = tester.predict(request.text)
