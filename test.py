@@ -24,6 +24,7 @@ def main(args):
     dataset_test = dataset[num_train+num_val:]
     
     tester = NerTester(
+        device=args.device,
         args=args,
         label2id=label2id,
         dataset=dataset_test,

@@ -1,8 +1,8 @@
-2024-12-20 05:29:24,721 Japanese NER Training INFO: Namespace(seed=123
+2024-12-23 00:24:05,017 Japanese NER Training INFO: Namespace(seed=123
  output_dir='./output/train/cl-tohoku/bert-base-japanese-whole-word-masking'
- data_path='./ner.json'
+ data_path='./dataset/ner.json'
  device='cuda:7'
- ner_config_path='./ner_config.json'
+ ner_config_path='./dataset/ner_config.json'
  train_split=0.75
  val_split=0.15
  test_split=0.1
@@ -12,161 +12,161 @@
  batch_size=16
  lr=2e-05
  model_save_path='model/model.bin')
-2024-12-20 05:29:30,350 Japanese NER Training INFO: 
+2024-12-23 00:24:16,691 Japanese NER Training INFO: 
 -------------------- Dataset Stat --------------------
  [TRAIN NUM]: 4007 
  [VAL NUM]: 801 
  [TEST NUM]: 535 
 -------------------- Dataset Stat --------------------
-2024-12-20 05:29:30,721 Japanese NER Training INFO:     train    iter 0    loss: 2.4074
-2024-12-20 05:29:31,162 Japanese NER Training INFO:     train    iter 10    loss: 0.4131
-2024-12-20 05:29:31,606 Japanese NER Training INFO:     train    iter 20    loss: 0.2432
-2024-12-20 05:29:32,057 Japanese NER Training INFO:     train    iter 30    loss: 0.1875
-2024-12-20 05:29:32,512 Japanese NER Training INFO:     train    iter 40    loss: 0.1481
-2024-12-20 05:29:32,964 Japanese NER Training INFO:     train    iter 50    loss: 0.1385
-2024-12-20 05:29:33,419 Japanese NER Training INFO:     train    iter 60    loss: 0.0769
-2024-12-20 05:29:33,870 Japanese NER Training INFO:     train    iter 70    loss: 0.0652
-2024-12-20 05:29:34,325 Japanese NER Training INFO:     train    iter 80    loss: 0.1065
-2024-12-20 05:29:34,777 Japanese NER Training INFO:     train    iter 90    loss: 0.0441
-2024-12-20 05:29:35,224 Japanese NER Training INFO:     train    iter 100    loss: 0.0510
-2024-12-20 05:29:35,677 Japanese NER Training INFO:     train    iter 110    loss: 0.0615
-2024-12-20 05:29:36,126 Japanese NER Training INFO:     train    iter 120    loss: 0.0733
-2024-12-20 05:29:36,581 Japanese NER Training INFO:     train    iter 130    loss: 0.0178
-2024-12-20 05:29:37,032 Japanese NER Training INFO:     train    iter 140    loss: 0.0374
-2024-12-20 05:29:37,478 Japanese NER Training INFO:     train    iter 150    loss: 0.0304
-2024-12-20 05:29:37,926 Japanese NER Training INFO:     train    iter 160    loss: 0.0371
-2024-12-20 05:29:38,374 Japanese NER Training INFO:     train    iter 170    loss: 0.0646
-2024-12-20 05:29:38,823 Japanese NER Training INFO:     train    iter 180    loss: 0.1123
-2024-12-20 05:29:39,271 Japanese NER Training INFO:     train    iter 190    loss: 0.0176
-2024-12-20 05:29:39,716 Japanese NER Training INFO:     train    iter 200    loss: 0.0400
-2024-12-20 05:29:40,162 Japanese NER Training INFO:     train    iter 210    loss: 0.0275
-2024-12-20 05:29:40,610 Japanese NER Training INFO:     train    iter 220    loss: 0.0442
-2024-12-20 05:29:41,057 Japanese NER Training INFO:     train    iter 230    loss: 0.0162
-2024-12-20 05:29:41,509 Japanese NER Training INFO:     train    iter 240    loss: 0.0342
-2024-12-20 05:29:41,950 Japanese NER Training INFO:     train    iter 250    loss: 0.0469
-2024-12-20 05:29:41,987 Japanese NER Training INFO:     val    iter 0    loss: 0.0224
-2024-12-20 05:29:42,309 Japanese NER Training INFO:     val    iter 10    loss: 0.0561
-2024-12-20 05:29:42,632 Japanese NER Training INFO:     val    iter 20    loss: 0.0224
-2024-12-20 05:29:43,357 Japanese NER Training INFO: saved!
-2024-12-20 05:29:43,357 Japanese NER Training INFO: [Epoch] 1/5    [Phase] train    [Train Loss] 0.1331581582348038    [Val Loss] 0.014194656193684251
-2024-12-20 05:29:43,402 Japanese NER Training INFO:     train    iter 0    loss: 0.0129
-2024-12-20 05:29:43,847 Japanese NER Training INFO:     train    iter 10    loss: 0.0125
-2024-12-20 05:29:44,296 Japanese NER Training INFO:     train    iter 20    loss: 0.0079
-2024-12-20 05:29:44,743 Japanese NER Training INFO:     train    iter 30    loss: 0.0198
-2024-12-20 05:29:45,188 Japanese NER Training INFO:     train    iter 40    loss: 0.0210
-2024-12-20 05:29:45,638 Japanese NER Training INFO:     train    iter 50    loss: 0.0187
-2024-12-20 05:29:46,085 Japanese NER Training INFO:     train    iter 60    loss: 0.0118
-2024-12-20 05:29:46,533 Japanese NER Training INFO:     train    iter 70    loss: 0.0192
-2024-12-20 05:29:46,982 Japanese NER Training INFO:     train    iter 80    loss: 0.0140
-2024-12-20 05:29:47,430 Japanese NER Training INFO:     train    iter 90    loss: 0.0030
-2024-12-20 05:29:47,881 Japanese NER Training INFO:     train    iter 100    loss: 0.0163
-2024-12-20 05:29:48,332 Japanese NER Training INFO:     train    iter 110    loss: 0.0088
-2024-12-20 05:29:48,782 Japanese NER Training INFO:     train    iter 120    loss: 0.0245
-2024-12-20 05:29:49,230 Japanese NER Training INFO:     train    iter 130    loss: 0.0111
-2024-12-20 05:29:49,673 Japanese NER Training INFO:     train    iter 140    loss: 0.0127
-2024-12-20 05:29:50,117 Japanese NER Training INFO:     train    iter 150    loss: 0.0117
-2024-12-20 05:29:50,560 Japanese NER Training INFO:     train    iter 160    loss: 0.0474
-2024-12-20 05:29:51,008 Japanese NER Training INFO:     train    iter 170    loss: 0.0101
-2024-12-20 05:29:51,452 Japanese NER Training INFO:     train    iter 180    loss: 0.0269
-2024-12-20 05:29:51,898 Japanese NER Training INFO:     train    iter 190    loss: 0.0080
-2024-12-20 05:29:52,345 Japanese NER Training INFO:     train    iter 200    loss: 0.0324
-2024-12-20 05:29:52,796 Japanese NER Training INFO:     train    iter 210    loss: 0.0077
-2024-12-20 05:29:53,245 Japanese NER Training INFO:     train    iter 220    loss: 0.0374
-2024-12-20 05:29:53,691 Japanese NER Training INFO:     train    iter 230    loss: 0.0201
-2024-12-20 05:29:54,135 Japanese NER Training INFO:     train    iter 240    loss: 0.0245
-2024-12-20 05:29:54,566 Japanese NER Training INFO:     train    iter 250    loss: 0.0568
-2024-12-20 05:29:54,601 Japanese NER Training INFO:     val    iter 0    loss: 0.0276
-2024-12-20 05:29:54,920 Japanese NER Training INFO:     val    iter 10    loss: 0.0295
-2024-12-20 05:29:55,242 Japanese NER Training INFO:     val    iter 20    loss: 0.0253
-2024-12-20 05:29:55,968 Japanese NER Training INFO: saved!
-2024-12-20 05:29:55,968 Japanese NER Training INFO: [Epoch] 2/5    [Phase] train    [Train Loss] 0.01823612652107281    [Val Loss] 0.01346386761315046
-2024-12-20 05:29:56,013 Japanese NER Training INFO:     train    iter 0    loss: 0.0080
-2024-12-20 05:29:56,459 Japanese NER Training INFO:     train    iter 10    loss: 0.0057
-2024-12-20 05:29:56,911 Japanese NER Training INFO:     train    iter 20    loss: 0.0116
-2024-12-20 05:29:57,361 Japanese NER Training INFO:     train    iter 30    loss: 0.0052
-2024-12-20 05:29:57,808 Japanese NER Training INFO:     train    iter 40    loss: 0.0040
-2024-12-20 05:29:58,257 Japanese NER Training INFO:     train    iter 50    loss: 0.0156
-2024-12-20 05:29:58,701 Japanese NER Training INFO:     train    iter 60    loss: 0.0067
-2024-12-20 05:29:59,145 Japanese NER Training INFO:     train    iter 70    loss: 0.0137
-2024-12-20 05:29:59,594 Japanese NER Training INFO:     train    iter 80    loss: 0.0152
-2024-12-20 05:30:00,039 Japanese NER Training INFO:     train    iter 90    loss: 0.0062
-2024-12-20 05:30:00,485 Japanese NER Training INFO:     train    iter 100    loss: 0.0081
-2024-12-20 05:30:00,931 Japanese NER Training INFO:     train    iter 110    loss: 0.0064
-2024-12-20 05:30:01,381 Japanese NER Training INFO:     train    iter 120    loss: 0.0075
-2024-12-20 05:30:01,828 Japanese NER Training INFO:     train    iter 130    loss: 0.0144
-2024-12-20 05:30:02,271 Japanese NER Training INFO:     train    iter 140    loss: 0.0089
-2024-12-20 05:30:02,715 Japanese NER Training INFO:     train    iter 150    loss: 0.0029
-2024-12-20 05:30:03,162 Japanese NER Training INFO:     train    iter 160    loss: 0.0176
-2024-12-20 05:30:03,608 Japanese NER Training INFO:     train    iter 170    loss: 0.0153
-2024-12-20 05:30:04,054 Japanese NER Training INFO:     train    iter 180    loss: 0.0037
-2024-12-20 05:30:04,501 Japanese NER Training INFO:     train    iter 190    loss: 0.0073
-2024-12-20 05:30:04,947 Japanese NER Training INFO:     train    iter 200    loss: 0.0070
-2024-12-20 05:30:05,397 Japanese NER Training INFO:     train    iter 210    loss: 0.0033
-2024-12-20 05:30:05,847 Japanese NER Training INFO:     train    iter 220    loss: 0.0125
-2024-12-20 05:30:06,296 Japanese NER Training INFO:     train    iter 230    loss: 0.0041
-2024-12-20 05:30:06,743 Japanese NER Training INFO:     train    iter 240    loss: 0.0015
-2024-12-20 05:30:07,180 Japanese NER Training INFO:     train    iter 250    loss: 0.0059
-2024-12-20 05:30:07,215 Japanese NER Training INFO:     val    iter 0    loss: 0.0203
-2024-12-20 05:30:07,537 Japanese NER Training INFO:     val    iter 10    loss: 0.0285
-2024-12-20 05:30:07,856 Japanese NER Training INFO:     val    iter 20    loss: 0.0260
-2024-12-20 05:30:07,992 Japanese NER Training INFO: [Epoch] 3/5    [Phase] train    [Train Loss] 0.008510793095567532    [Val Loss] 0.015612102347366819
-2024-12-20 05:30:08,036 Japanese NER Training INFO:     train    iter 0    loss: 0.0114
-2024-12-20 05:30:08,475 Japanese NER Training INFO:     train    iter 10    loss: 0.0055
-2024-12-20 05:30:08,919 Japanese NER Training INFO:     train    iter 20    loss: 0.0028
-2024-12-20 05:30:09,365 Japanese NER Training INFO:     train    iter 30    loss: 0.0011
-2024-12-20 05:30:09,811 Japanese NER Training INFO:     train    iter 40    loss: 0.0013
-2024-12-20 05:30:10,255 Japanese NER Training INFO:     train    iter 50    loss: 0.0008
-2024-12-20 05:30:10,699 Japanese NER Training INFO:     train    iter 60    loss: 0.0051
-2024-12-20 05:30:11,145 Japanese NER Training INFO:     train    iter 70    loss: 0.0140
-2024-12-20 05:30:11,588 Japanese NER Training INFO:     train    iter 80    loss: 0.0028
-2024-12-20 05:30:12,034 Japanese NER Training INFO:     train    iter 90    loss: 0.0021
-2024-12-20 05:30:12,480 Japanese NER Training INFO:     train    iter 100    loss: 0.0008
-2024-12-20 05:30:12,926 Japanese NER Training INFO:     train    iter 110    loss: 0.0030
-2024-12-20 05:30:13,371 Japanese NER Training INFO:     train    iter 120    loss: 0.0009
-2024-12-20 05:30:13,819 Japanese NER Training INFO:     train    iter 130    loss: 0.0008
-2024-12-20 05:30:14,267 Japanese NER Training INFO:     train    iter 140    loss: 0.0016
-2024-12-20 05:30:14,718 Japanese NER Training INFO:     train    iter 150    loss: 0.0027
-2024-12-20 05:30:15,163 Japanese NER Training INFO:     train    iter 160    loss: 0.0138
-2024-12-20 05:30:15,606 Japanese NER Training INFO:     train    iter 170    loss: 0.0020
-2024-12-20 05:30:16,051 Japanese NER Training INFO:     train    iter 180    loss: 0.0025
-2024-12-20 05:30:16,499 Japanese NER Training INFO:     train    iter 190    loss: 0.0065
-2024-12-20 05:30:16,946 Japanese NER Training INFO:     train    iter 200    loss: 0.0033
-2024-12-20 05:30:17,392 Japanese NER Training INFO:     train    iter 210    loss: 0.0009
-2024-12-20 05:30:17,836 Japanese NER Training INFO:     train    iter 220    loss: 0.0090
-2024-12-20 05:30:18,282 Japanese NER Training INFO:     train    iter 230    loss: 0.0017
-2024-12-20 05:30:18,727 Japanese NER Training INFO:     train    iter 240    loss: 0.0071
-2024-12-20 05:30:19,165 Japanese NER Training INFO:     train    iter 250    loss: 0.0004
-2024-12-20 05:30:19,201 Japanese NER Training INFO:     val    iter 0    loss: 0.0355
-2024-12-20 05:30:19,523 Japanese NER Training INFO:     val    iter 10    loss: 0.0382
-2024-12-20 05:30:19,840 Japanese NER Training INFO:     val    iter 20    loss: 0.0372
-2024-12-20 05:30:19,976 Japanese NER Training INFO: [Epoch] 4/5    [Phase] train    [Train Loss] 0.004470729824464228    [Val Loss] 0.016647910022920348
-2024-12-20 05:30:20,020 Japanese NER Training INFO:     train    iter 0    loss: 0.0005
-2024-12-20 05:30:20,458 Japanese NER Training INFO:     train    iter 10    loss: 0.0029
-2024-12-20 05:30:20,904 Japanese NER Training INFO:     train    iter 20    loss: 0.0024
-2024-12-20 05:30:21,351 Japanese NER Training INFO:     train    iter 30    loss: 0.0004
-2024-12-20 05:30:21,796 Japanese NER Training INFO:     train    iter 40    loss: 0.0012
-2024-12-20 05:30:22,238 Japanese NER Training INFO:     train    iter 50    loss: 0.0026
-2024-12-20 05:30:22,685 Japanese NER Training INFO:     train    iter 60    loss: 0.0005
-2024-12-20 05:30:23,130 Japanese NER Training INFO:     train    iter 70    loss: 0.0004
-2024-12-20 05:30:23,576 Japanese NER Training INFO:     train    iter 80    loss: 0.0047
-2024-12-20 05:30:24,022 Japanese NER Training INFO:     train    iter 90    loss: 0.0051
-2024-12-20 05:30:24,466 Japanese NER Training INFO:     train    iter 100    loss: 0.0043
-2024-12-20 05:30:24,913 Japanese NER Training INFO:     train    iter 110    loss: 0.0018
-2024-12-20 05:30:25,364 Japanese NER Training INFO:     train    iter 120    loss: 0.0017
-2024-12-20 05:30:25,813 Japanese NER Training INFO:     train    iter 130    loss: 0.0030
-2024-12-20 05:30:26,262 Japanese NER Training INFO:     train    iter 140    loss: 0.0014
-2024-12-20 05:30:26,711 Japanese NER Training INFO:     train    iter 150    loss: 0.0022
-2024-12-20 05:30:27,157 Japanese NER Training INFO:     train    iter 160    loss: 0.0016
-2024-12-20 05:30:27,602 Japanese NER Training INFO:     train    iter 170    loss: 0.0005
-2024-12-20 05:30:28,045 Japanese NER Training INFO:     train    iter 180    loss: 0.0068
-2024-12-20 05:30:28,490 Japanese NER Training INFO:     train    iter 190    loss: 0.0023
-2024-12-20 05:30:28,933 Japanese NER Training INFO:     train    iter 200    loss: 0.0024
-2024-12-20 05:30:29,381 Japanese NER Training INFO:     train    iter 210    loss: 0.0010
-2024-12-20 05:30:29,830 Japanese NER Training INFO:     train    iter 220    loss: 0.0021
-2024-12-20 05:30:30,279 Japanese NER Training INFO:     train    iter 230    loss: 0.0016
-2024-12-20 05:30:30,727 Japanese NER Training INFO:     train    iter 240    loss: 0.0033
-2024-12-20 05:30:31,169 Japanese NER Training INFO:     train    iter 250    loss: 0.0090
-2024-12-20 05:30:31,207 Japanese NER Training INFO:     val    iter 0    loss: 0.0273
-2024-12-20 05:30:31,526 Japanese NER Training INFO:     val    iter 10    loss: 0.0327
-2024-12-20 05:30:31,849 Japanese NER Training INFO:     val    iter 20    loss: 0.0309
-2024-12-20 05:30:31,983 Japanese NER Training INFO: [Epoch] 5/5    [Phase] train    [Train Loss] 0.002842011396190473    [Val Loss] 0.016655836147389906
+2024-12-23 00:24:17,858 Japanese NER Training INFO:     train    iter 0    loss: 2.4074
+2024-12-23 00:24:18,393 Japanese NER Training INFO:     train    iter 10    loss: 0.4131
+2024-12-23 00:24:18,902 Japanese NER Training INFO:     train    iter 20    loss: 0.2432
+2024-12-23 00:24:19,408 Japanese NER Training INFO:     train    iter 30    loss: 0.1875
+2024-12-23 00:24:19,917 Japanese NER Training INFO:     train    iter 40    loss: 0.1481
+2024-12-23 00:24:20,417 Japanese NER Training INFO:     train    iter 50    loss: 0.1385
+2024-12-23 00:24:20,921 Japanese NER Training INFO:     train    iter 60    loss: 0.0769
+2024-12-23 00:24:21,424 Japanese NER Training INFO:     train    iter 70    loss: 0.0652
+2024-12-23 00:24:21,928 Japanese NER Training INFO:     train    iter 80    loss: 0.1065
+2024-12-23 00:24:22,423 Japanese NER Training INFO:     train    iter 90    loss: 0.0441
+2024-12-23 00:24:22,918 Japanese NER Training INFO:     train    iter 100    loss: 0.0510
+2024-12-23 00:24:23,422 Japanese NER Training INFO:     train    iter 110    loss: 0.0615
+2024-12-23 00:24:23,905 Japanese NER Training INFO:     train    iter 120    loss: 0.0733
+2024-12-23 00:24:24,369 Japanese NER Training INFO:     train    iter 130    loss: 0.0178
+2024-12-23 00:24:24,820 Japanese NER Training INFO:     train    iter 140    loss: 0.0374
+2024-12-23 00:24:25,270 Japanese NER Training INFO:     train    iter 150    loss: 0.0304
+2024-12-23 00:24:25,724 Japanese NER Training INFO:     train    iter 160    loss: 0.0371
+2024-12-23 00:24:26,175 Japanese NER Training INFO:     train    iter 170    loss: 0.0646
+2024-12-23 00:24:26,626 Japanese NER Training INFO:     train    iter 180    loss: 0.1123
+2024-12-23 00:24:27,079 Japanese NER Training INFO:     train    iter 190    loss: 0.0176
+2024-12-23 00:24:27,530 Japanese NER Training INFO:     train    iter 200    loss: 0.0400
+2024-12-23 00:24:27,984 Japanese NER Training INFO:     train    iter 210    loss: 0.0275
+2024-12-23 00:24:28,434 Japanese NER Training INFO:     train    iter 220    loss: 0.0442
+2024-12-23 00:24:28,883 Japanese NER Training INFO:     train    iter 230    loss: 0.0162
+2024-12-23 00:24:29,335 Japanese NER Training INFO:     train    iter 240    loss: 0.0342
+2024-12-23 00:24:29,780 Japanese NER Training INFO:     train    iter 250    loss: 0.0469
+2024-12-23 00:24:29,817 Japanese NER Training INFO:     val    iter 0    loss: 0.0224
+2024-12-23 00:24:30,143 Japanese NER Training INFO:     val    iter 10    loss: 0.0561
+2024-12-23 00:24:30,470 Japanese NER Training INFO:     val    iter 20    loss: 0.0224
+2024-12-23 00:24:31,209 Japanese NER Training INFO: saved!
+2024-12-23 00:24:31,209 Japanese NER Training INFO: [Epoch] 1/5    [Phase] train    [Train Loss] 0.1331581582348038    [Val Loss] 0.014194656193684251
+2024-12-23 00:24:31,255 Japanese NER Training INFO:     train    iter 0    loss: 0.0129
+2024-12-23 00:24:31,721 Japanese NER Training INFO:     train    iter 10    loss: 0.0125
+2024-12-23 00:24:32,177 Japanese NER Training INFO:     train    iter 20    loss: 0.0079
+2024-12-23 00:24:32,632 Japanese NER Training INFO:     train    iter 30    loss: 0.0198
+2024-12-23 00:24:33,082 Japanese NER Training INFO:     train    iter 40    loss: 0.0210
+2024-12-23 00:24:33,535 Japanese NER Training INFO:     train    iter 50    loss: 0.0187
+2024-12-23 00:24:33,985 Japanese NER Training INFO:     train    iter 60    loss: 0.0118
+2024-12-23 00:24:34,435 Japanese NER Training INFO:     train    iter 70    loss: 0.0192
+2024-12-23 00:24:34,886 Japanese NER Training INFO:     train    iter 80    loss: 0.0140
+2024-12-23 00:24:35,335 Japanese NER Training INFO:     train    iter 90    loss: 0.0030
+2024-12-23 00:24:35,786 Japanese NER Training INFO:     train    iter 100    loss: 0.0163
+2024-12-23 00:24:36,233 Japanese NER Training INFO:     train    iter 110    loss: 0.0088
+2024-12-23 00:24:36,681 Japanese NER Training INFO:     train    iter 120    loss: 0.0245
+2024-12-23 00:24:37,132 Japanese NER Training INFO:     train    iter 130    loss: 0.0111
+2024-12-23 00:24:37,577 Japanese NER Training INFO:     train    iter 140    loss: 0.0127
+2024-12-23 00:24:38,023 Japanese NER Training INFO:     train    iter 150    loss: 0.0117
+2024-12-23 00:24:38,468 Japanese NER Training INFO:     train    iter 160    loss: 0.0474
+2024-12-23 00:24:38,916 Japanese NER Training INFO:     train    iter 170    loss: 0.0101
+2024-12-23 00:24:39,362 Japanese NER Training INFO:     train    iter 180    loss: 0.0269
+2024-12-23 00:24:39,808 Japanese NER Training INFO:     train    iter 190    loss: 0.0080
+2024-12-23 00:24:40,256 Japanese NER Training INFO:     train    iter 200    loss: 0.0324
+2024-12-23 00:24:40,710 Japanese NER Training INFO:     train    iter 210    loss: 0.0077
+2024-12-23 00:24:41,158 Japanese NER Training INFO:     train    iter 220    loss: 0.0374
+2024-12-23 00:24:41,609 Japanese NER Training INFO:     train    iter 230    loss: 0.0201
+2024-12-23 00:24:42,060 Japanese NER Training INFO:     train    iter 240    loss: 0.0245
+2024-12-23 00:24:42,496 Japanese NER Training INFO:     train    iter 250    loss: 0.0568
+2024-12-23 00:24:42,532 Japanese NER Training INFO:     val    iter 0    loss: 0.0276
+2024-12-23 00:24:42,856 Japanese NER Training INFO:     val    iter 10    loss: 0.0295
+2024-12-23 00:24:43,182 Japanese NER Training INFO:     val    iter 20    loss: 0.0253
+2024-12-23 00:24:43,910 Japanese NER Training INFO: saved!
+2024-12-23 00:24:43,910 Japanese NER Training INFO: [Epoch] 2/5    [Phase] train    [Train Loss] 0.01823612652107281    [Val Loss] 0.01346386761315046
+2024-12-23 00:24:43,955 Japanese NER Training INFO:     train    iter 0    loss: 0.0080
+2024-12-23 00:24:44,422 Japanese NER Training INFO:     train    iter 10    loss: 0.0057
+2024-12-23 00:24:44,881 Japanese NER Training INFO:     train    iter 20    loss: 0.0116
+2024-12-23 00:24:45,332 Japanese NER Training INFO:     train    iter 30    loss: 0.0052
+2024-12-23 00:24:45,779 Japanese NER Training INFO:     train    iter 40    loss: 0.0040
+2024-12-23 00:24:46,229 Japanese NER Training INFO:     train    iter 50    loss: 0.0156
+2024-12-23 00:24:46,676 Japanese NER Training INFO:     train    iter 60    loss: 0.0067
+2024-12-23 00:24:47,124 Japanese NER Training INFO:     train    iter 70    loss: 0.0137
+2024-12-23 00:24:47,574 Japanese NER Training INFO:     train    iter 80    loss: 0.0152
+2024-12-23 00:24:48,020 Japanese NER Training INFO:     train    iter 90    loss: 0.0062
+2024-12-23 00:24:48,468 Japanese NER Training INFO:     train    iter 100    loss: 0.0081
+2024-12-23 00:24:48,917 Japanese NER Training INFO:     train    iter 110    loss: 0.0064
+2024-12-23 00:24:49,373 Japanese NER Training INFO:     train    iter 120    loss: 0.0075
+2024-12-23 00:24:49,824 Japanese NER Training INFO:     train    iter 130    loss: 0.0144
+2024-12-23 00:24:50,271 Japanese NER Training INFO:     train    iter 140    loss: 0.0089
+2024-12-23 00:24:50,716 Japanese NER Training INFO:     train    iter 150    loss: 0.0029
+2024-12-23 00:24:51,162 Japanese NER Training INFO:     train    iter 160    loss: 0.0176
+2024-12-23 00:24:51,608 Japanese NER Training INFO:     train    iter 170    loss: 0.0153
+2024-12-23 00:24:52,055 Japanese NER Training INFO:     train    iter 180    loss: 0.0037
+2024-12-23 00:24:52,502 Japanese NER Training INFO:     train    iter 190    loss: 0.0073
+2024-12-23 00:24:52,948 Japanese NER Training INFO:     train    iter 200    loss: 0.0070
+2024-12-23 00:24:53,393 Japanese NER Training INFO:     train    iter 210    loss: 0.0033
+2024-12-23 00:24:53,843 Japanese NER Training INFO:     train    iter 220    loss: 0.0125
+2024-12-23 00:24:54,292 Japanese NER Training INFO:     train    iter 230    loss: 0.0041
+2024-12-23 00:24:54,742 Japanese NER Training INFO:     train    iter 240    loss: 0.0015
+2024-12-23 00:24:55,182 Japanese NER Training INFO:     train    iter 250    loss: 0.0059
+2024-12-23 00:24:55,218 Japanese NER Training INFO:     val    iter 0    loss: 0.0203
+2024-12-23 00:24:55,542 Japanese NER Training INFO:     val    iter 10    loss: 0.0285
+2024-12-23 00:24:55,864 Japanese NER Training INFO:     val    iter 20    loss: 0.0260
+2024-12-23 00:24:56,000 Japanese NER Training INFO: [Epoch] 3/5    [Phase] train    [Train Loss] 0.008510793095567532    [Val Loss] 0.015612102347366819
+2024-12-23 00:24:56,045 Japanese NER Training INFO:     train    iter 0    loss: 0.0114
+2024-12-23 00:24:56,485 Japanese NER Training INFO:     train    iter 10    loss: 0.0055
+2024-12-23 00:24:56,932 Japanese NER Training INFO:     train    iter 20    loss: 0.0028
+2024-12-23 00:24:57,380 Japanese NER Training INFO:     train    iter 30    loss: 0.0011
+2024-12-23 00:24:57,828 Japanese NER Training INFO:     train    iter 40    loss: 0.0013
+2024-12-23 00:24:58,278 Japanese NER Training INFO:     train    iter 50    loss: 0.0008
+2024-12-23 00:24:58,728 Japanese NER Training INFO:     train    iter 60    loss: 0.0051
+2024-12-23 00:24:59,179 Japanese NER Training INFO:     train    iter 70    loss: 0.0140
+2024-12-23 00:24:59,629 Japanese NER Training INFO:     train    iter 80    loss: 0.0028
+2024-12-23 00:25:00,080 Japanese NER Training INFO:     train    iter 90    loss: 0.0021
+2024-12-23 00:25:00,532 Japanese NER Training INFO:     train    iter 100    loss: 0.0008
+2024-12-23 00:25:00,988 Japanese NER Training INFO:     train    iter 110    loss: 0.0030
+2024-12-23 00:25:01,437 Japanese NER Training INFO:     train    iter 120    loss: 0.0009
+2024-12-23 00:25:01,895 Japanese NER Training INFO:     train    iter 130    loss: 0.0008
+2024-12-23 00:25:02,350 Japanese NER Training INFO:     train    iter 140    loss: 0.0016
+2024-12-23 00:25:02,803 Japanese NER Training INFO:     train    iter 150    loss: 0.0027
+2024-12-23 00:25:03,249 Japanese NER Training INFO:     train    iter 160    loss: 0.0138
+2024-12-23 00:25:03,694 Japanese NER Training INFO:     train    iter 170    loss: 0.0020
+2024-12-23 00:25:04,140 Japanese NER Training INFO:     train    iter 180    loss: 0.0025
+2024-12-23 00:25:04,589 Japanese NER Training INFO:     train    iter 190    loss: 0.0065
+2024-12-23 00:25:05,035 Japanese NER Training INFO:     train    iter 200    loss: 0.0033
+2024-12-23 00:25:05,483 Japanese NER Training INFO:     train    iter 210    loss: 0.0009
+2024-12-23 00:25:05,930 Japanese NER Training INFO:     train    iter 220    loss: 0.0090
+2024-12-23 00:25:06,377 Japanese NER Training INFO:     train    iter 230    loss: 0.0017
+2024-12-23 00:25:06,823 Japanese NER Training INFO:     train    iter 240    loss: 0.0071
+2024-12-23 00:25:07,262 Japanese NER Training INFO:     train    iter 250    loss: 0.0004
+2024-12-23 00:25:07,298 Japanese NER Training INFO:     val    iter 0    loss: 0.0355
+2024-12-23 00:25:07,620 Japanese NER Training INFO:     val    iter 10    loss: 0.0382
+2024-12-23 00:25:07,939 Japanese NER Training INFO:     val    iter 20    loss: 0.0372
+2024-12-23 00:25:08,075 Japanese NER Training INFO: [Epoch] 4/5    [Phase] train    [Train Loss] 0.004470729824464228    [Val Loss] 0.016647910022920348
+2024-12-23 00:25:08,119 Japanese NER Training INFO:     train    iter 0    loss: 0.0005
+2024-12-23 00:25:08,559 Japanese NER Training INFO:     train    iter 10    loss: 0.0029
+2024-12-23 00:25:09,007 Japanese NER Training INFO:     train    iter 20    loss: 0.0024
+2024-12-23 00:25:09,453 Japanese NER Training INFO:     train    iter 30    loss: 0.0004
+2024-12-23 00:25:09,899 Japanese NER Training INFO:     train    iter 40    loss: 0.0012
+2024-12-23 00:25:10,344 Japanese NER Training INFO:     train    iter 50    loss: 0.0026
+2024-12-23 00:25:10,794 Japanese NER Training INFO:     train    iter 60    loss: 0.0005
+2024-12-23 00:25:11,240 Japanese NER Training INFO:     train    iter 70    loss: 0.0004
+2024-12-23 00:25:11,686 Japanese NER Training INFO:     train    iter 80    loss: 0.0047
+2024-12-23 00:25:12,133 Japanese NER Training INFO:     train    iter 90    loss: 0.0051
+2024-12-23 00:25:12,580 Japanese NER Training INFO:     train    iter 100    loss: 0.0043
+2024-12-23 00:25:13,028 Japanese NER Training INFO:     train    iter 110    loss: 0.0018
+2024-12-23 00:25:13,475 Japanese NER Training INFO:     train    iter 120    loss: 0.0017
+2024-12-23 00:25:13,921 Japanese NER Training INFO:     train    iter 130    loss: 0.0030
+2024-12-23 00:25:14,370 Japanese NER Training INFO:     train    iter 140    loss: 0.0014
+2024-12-23 00:25:14,818 Japanese NER Training INFO:     train    iter 150    loss: 0.0022
+2024-12-23 00:25:15,271 Japanese NER Training INFO:     train    iter 160    loss: 0.0016
+2024-12-23 00:25:15,718 Japanese NER Training INFO:     train    iter 170    loss: 0.0005
+2024-12-23 00:25:16,162 Japanese NER Training INFO:     train    iter 180    loss: 0.0068
+2024-12-23 00:25:16,607 Japanese NER Training INFO:     train    iter 190    loss: 0.0023
+2024-12-23 00:25:17,054 Japanese NER Training INFO:     train    iter 200    loss: 0.0024
+2024-12-23 00:25:17,501 Japanese NER Training INFO:     train    iter 210    loss: 0.0010
+2024-12-23 00:25:17,949 Japanese NER Training INFO:     train    iter 220    loss: 0.0021
+2024-12-23 00:25:18,397 Japanese NER Training INFO:     train    iter 230    loss: 0.0016
+2024-12-23 00:25:18,844 Japanese NER Training INFO:     train    iter 240    loss: 0.0033
+2024-12-23 00:25:19,280 Japanese NER Training INFO:     train    iter 250    loss: 0.0090
+2024-12-23 00:25:19,318 Japanese NER Training INFO:     val    iter 0    loss: 0.0273
+2024-12-23 00:25:19,636 Japanese NER Training INFO:     val    iter 10    loss: 0.0327
+2024-12-23 00:25:19,958 Japanese NER Training INFO:     val    iter 20    loss: 0.0309
+2024-12-23 00:25:20,092 Japanese NER Training INFO: [Epoch] 5/5    [Phase] train    [Train Loss] 0.002842011396190473    [Val Loss] 0.016655836147389906

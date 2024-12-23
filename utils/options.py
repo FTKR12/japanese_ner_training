@@ -22,7 +22,7 @@ def get_args():
     parser.add_argument('--epochs', default=5, type=int)
     parser.add_argument('--batch_size', default=16, type=int)
     parser.add_argument('--lr', default=2e-5, type=float)
-    parser.add_argument('--model_save_path', default='model/model.bin')
+    parser.add_argument('--model_save_path', default='./model/model.bin')
     
     args = parser.parse_args()
     return args

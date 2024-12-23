@@ -70,7 +70,8 @@ class NerTrainer():
 
 class NerTester():
 
-    def __init__(self, args, label2id, dataset, tokenizer, model):
+    def __init__(self, device, args, label2id, dataset, tokenizer, model):
+        self.device = device
         self.args = args
         self.label2id = label2id
         self.dataset = dataset
@@ -109,12 +110,14 @@ class NerTester():
     def predict(self, text):
 
         encoding, spans = self.tokenizer.encode_plus_untagged(text)
-        encoding = { k: v.to(self.args.device) for k, v in encoding.items() }
+        encoding = { k: v.to(self.device) for k, v in encoding.items() }
 
         with torch.no_grad():
             output = self.model(**encoding)
             scores = output.logits
             labels_predicted = scores[0].argmax(-1).cpu().numpy().tolist() 
+        
+        print(labels_predicted)
 
         entities = self.tokenizer.convert_bert_output_to_entities(
             text, labels_predicted, spans
