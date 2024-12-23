@@ -6,7 +6,6 @@ from transformers import BertForTokenClassification
 
 from src import NerTokenizerForTest, NerTester
 
-# モデルとトークナイザの読み込み
 label2id = json.load(open("./dataset/ner_config.json", "r"))
 id2label = {value: key for key, value in label2id.items()}
 model_name = 'cl-tohoku/bert-base-japanese-whole-word-masking'
